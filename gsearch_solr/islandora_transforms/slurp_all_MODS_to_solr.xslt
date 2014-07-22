@@ -82,14 +82,6 @@
     </field>
   </xsl:template>
   
-  <!-- Temporary workaround to allow us to separate out the Arabic subjects -->
-  <xsl:template match="mods:subject[@authority='local']" mode="Tahrir">
-    <!-- mods_topic_ar_mt is created automatically for us -->
-    <field name="mods_topic_ar_ms">
-      <xsl:value-of select="mods:topic"/>
-    </field>
-  </xsl:template>
-
   <!--
     SECTION 3:
     
